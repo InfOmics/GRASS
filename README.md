@@ -41,7 +41,7 @@ GPU card with 6Gb of RAM and running with the CUDA
 
 Before running the compilation for the GRASS executable,please be sure that the CUDA toolkit has been correctly installed on your system and that the nvcc compiler is accessible form the curretn directory.
 
-```
+```console
 git clone https://github.com/InfOmics/GRASS.git
 cd GRASS
 mkdir obj
@@ -50,7 +50,7 @@ make
 
 After the compilation, the GRASS executable will be available.
 
-```
+```console
 ./GRASS -gff -c target_graph_file query_graph_file
 ```
 
