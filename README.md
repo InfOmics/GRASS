@@ -1,5 +1,6 @@
 # GRASS
 An Efficient Implementation of a Subgraph Isomorphism Algorithm for GPUs.
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [](#lang-en)
 
 <hr />
@@ -25,9 +26,44 @@ the proposed approach.
 
 <hr />
 
+## Requirements
+
+GRASS is implemented in C++/CUDA and it has ben run on a Intel
+Core i7-5960X 64bit hardware with 16 3GHz CPUs and 64Gb
+of host RAM and running a Ubuntu 16.04 LTS operating
+system, equipped with an NVIDIA GeForce GTX 980 Ti
+GPU card with 6Gb of RAM and running with the CUDA
+8.0 toolkit. 
+
+<hr />
+
+## Usage
+
+Before running the compilation for the GRASS executable,please be sure that the CUDA toolkit has been correctly installed on your system and that the nvcc compiler is accessible form the curretn directory.
+
+```
+git clone https://github.com/InfOmics/GRASS.git
+cd GRASS
+mkdir obj
+make
+```
+
+After the compilation, the GRASS executable will be available.
+
+```
+./GRASS -gff -c target_graph_file query_graph_file
+```
+
+where `target_graph_file` and `query_graph_file` contains two graphs in the undirected graph format (see [the RI project])https://github.com/InfOmics/RI) )
+
+
+<hr />
+
 ## License
-PanDelos is distributed under the MIT license. This means that it is free for both academic and commercial use. Note however that some third party components in PanDelos require that you reference certain works in scientific publications.
-You are free to link or use PanDelos inside source code of your own program. If do so, please reference (cite) PanDelos and this website. We appreciate bug fixes and would be happy to collaborate for improvements. 
+GRASS is distributed under the MIT license. This means that it is free for both academic and commercial use. 
+Note however that some third party components in GRASS require that you reference certain works in scientific publications.
+You are free to link or use GRASS inside source code of your own program. If do so, please reference (cite) GRASS and this website. 
+We appreciate bug fixes and would be happy to collaborate for improvements. 
 <!--- [License](https://raw.githubusercontent.com/GiugnoLab/PanDelos/master/LICENSE) -->
 
 <hr />
@@ -37,7 +73,7 @@ You are free to link or use PanDelos inside source code of your own program. If 
 If you have used any of the GRASS project software, please cite the following paper:
 
 ```
-Bonnici, Vincenzo, Rosalba Giugno, and Nicola Bombieri. 
+Vincenzo Bonnici, Rosalba Giugno, and Nicola Bombieri. 
 An Efficient Implementation of a Subgraph Isomorphism Algorithm for GPUs.
-s018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE, 2018.
+2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE, 2018.
 ```
