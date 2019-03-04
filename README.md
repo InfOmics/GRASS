@@ -54,7 +54,7 @@ After the compilation, the GRASS executable will be available.
 ./GRASS -gff -c target_graph_file query_graph_file
 ```
 
-where `target_graph_file` and `query_graph_file` contains two graphs in the undirected graph format (see [the RI project])https://github.com/InfOmics/RI) )
+where `target_graph_file` and `query_graph_file` contains two graphs in the undirected graph format (see [the RI project](https://github.com/InfOmics/RI) )
 
 
 <hr />
