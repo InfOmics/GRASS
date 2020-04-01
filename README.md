@@ -28,7 +28,7 @@ the proposed approach.
 
 ## Requirements
 
-GRASS is implemented in C++/CUDA and it has ben run on a Intel
+GRASS is implemented in C++/CUDA and it has been run on a Intel
 Core i7-5960X 64bit hardware with 16 3GHz CPUs and 64Gb
 of host RAM and running a Ubuntu 16.04 LTS operating
 system, equipped with an NVIDIA GeForce GTX 980 Ti
